@@ -12,49 +12,62 @@
 </head>
 <body>
     <div class="container">
-        <header class="up">
-            <img class="avatar" src="img/foto.jpg" alt="avatar">
-            <div>
-                <h1 class="name">Angelina Ivanova</h1>
-                <h2>Junior Front-End Developer (Vue.js)</h2>
+        <header>
+						<nav>
+							<ul class="nav-list">
+								<li><a class="header-link" href="#sum">Summary</a></li>
+								<li><a class="header-link" href="#skills">Skills</a></li>
+								<li><a class="header-link" href="#edu">Education</a></li>
+								<li><a class="header-link" href="#exp">Experience</a></li>
+								<li><a class="header-link" href="#code">Code example</a></li>
+								<li><a class="header-link" href="#lang">Languages</a></li>
+							</ul>
+						</nav>
+            <div class="up">
+              <img class="avatar" src="img/foto.jpg" alt="avatar">
+              <div>
+                  <h1 class="name">Angelina Ivanova</h1>
+                  <h2>Junior Front-End Developer (Vue.js)</h2>
+              </div>
             </div>
         </header>
         <main>
             <section class="item">
                 <div class="left-side">
                     <h3>Contacts</h3>
-                    <ul>
+                    <ul class="list">
                         <li>+79114052449</li>
                         <li>angelinaivanova16@gmail.com</li>
                     </ul>
-                    <h3>Skills</h3>
-                        <ul>
+                    <h3 id="skills">Skills</h3>
+                        <ul class="list">
                             <li>I am good at HTML, CSS.</li>
                             <li>I`m familiar with JavaScript and Vue.</li>
                             <li>I have some knowledge of version control (git).</li>
                         </ul>
-                    <h3>Languages</h3>
-                        <ul>
+                    <h3 id="lang">Languages</h3>
+                        <ul class="list">
                             <li>Russian - native speaker</li>
                             <li>English - B1</li>
                         </ul>
+							<img src="img/sefr.png" alt="certificate sefr">
                 </div>
             </section>
             <section class="item">
                 <div>
-                    <h3>About myself</h3>
+                    <h3 id="sum">Summary</h3>
                     <p>I want to study at The Rolling Scopes School in order to structure my knowledge and gain new ones. I am looking for a job or internship as a front-end developer. My goal is to get work experience. I get real pleasure from solving problems, from constant development and training, so I chose this profession. Good memory, flexibility of thinking, ability to work in multitasking conditions and quickly find information on the Internet help me. I am a quick learner and I am not afraid of difficulties.</p>
                 </div>
                 <div>
-                    <h3>Education</h3>
+                    <h3 id="edu">Education</h3>
                     <p>Karelian State Pedagogical Academy, the faculty of psychology (specialist), 2011.</p>    
                 </div>
                 <div>
-                    <h3>Experience</h3>
+                    <h3 id="exp">Experience</h3>
                     <p>I took a frontend development course in School of a young programmer and received a certificate.</p>
                 </div>
                 <div>
-                    <h3>Code example</h3>
+                    <h3 id="code">Code example</h3>
                     <pre>
                         <code>
 let firstNumber = +prompt("Enter the first number");
@@ -87,9 +100,9 @@ switch (sign) {
             </section>
         </main>
         <footer>
-            <p><a href="https://github.com/angelinaivanova16">Visit my GitHub</a></p>
+            <p><a class="footer-link" href="https://github.com/angelinaivanova16">Visit my GitHub</a></p>
             <p>© 2021</p>
-            <p><a href="https://rs.school/js/"><img class="logo" src="img/rs_school_js.svg" alt="logo"></a></p>
+            <p><a class="footer-link" href="https://rs.school/js/"><img class="logo" src="img/rs_school_js.svg" alt="logo"></a></p>
         </footer>
     </div>
 </body>
