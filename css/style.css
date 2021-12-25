@@ -35,7 +35,6 @@ li {
   font-family: "Roboto-Regular";
   margin: auto;
   width: 1200px;
-  /* min-width: 310px; */
   background-color: white;
   color: gray;
 }
@@ -112,7 +111,7 @@ footer {
 
   [for=burger] {
     display: block;
-    padding: 10px;
+    padding: 10px 0 0 10px;
   }
   [for=burger]::before {
     content: '☰';
@@ -122,7 +121,7 @@ footer {
     display: none;
     position: fixed;
     width: 80%;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(82, 87, 64, 0.9);
     user-select: none;
   }
   .nav-list {
@@ -133,10 +132,41 @@ footer {
     }
     .header-link {
       color: white;
-      font-size: 1.5vw;
+      font-size: 3vw;
     }
 
   #burger:checked + label + nav {
     display: block;
+  }
+
+
+  .up, main {
+    display: block;
+  }
+  .sefr {
+    display: none;
+  }
+  p, li {
+    font-size: 3vw;
+  }
+  pre {
+    font-size: 2vw;
+  }
+  h1 {
+    font-size: 6vw;
+    padding: 0 10px;
+  }
+  h2 {
+    font-size: 4.5vw;
+    padding: 0 10px;
+
+  }
+  h3 {
+    font-size: 4vw;
+    margin: 10px 0;
+  }
+  .avatar {
+    width: 45%;
+    padding: 10px;
   }
 }
