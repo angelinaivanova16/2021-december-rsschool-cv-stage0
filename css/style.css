@@ -117,11 +117,20 @@ footer {
     content: '☰';
   }
 
-  nav {
+  #burger:checked + label + nav {
+    display: block;
+  }
+
+
+  .header-link:hover {
+    filter: brightness(0.7);
+  }
+
+
+  .main-nav {
     display: none;
-    position: fixed;
     width: 80%;
-    background: rgba(82, 87, 64, 0.9);
+    background: #818C81;
     user-select: none;
   }
   .nav-list {
@@ -134,11 +143,7 @@ footer {
       color: white;
       font-size: 3vw;
     }
-
-  #burger:checked + label + nav {
-    display: block;
-  }
-
+    
 
   .up, main {
     display: block;
